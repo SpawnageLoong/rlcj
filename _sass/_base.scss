@@ -1,7 +1,8 @@
 // Base
 //-------------------------------
 
-@use "variables";
+@use 'variables';
+@use 'theme';
 
 *,
 *::before,
@@ -9,15 +10,15 @@
   box-sizing: border-box;
 }
 ::selection {
-  color: var(--bg-color);
-  background-color: var(--text-color);
+  color: theme.$bg-color;
+  background-color: theme.$text-color;
 }
 
 body {
     font-size: variables.$base-font-size;
     line-height: variables.$base-line-height;
-    color: var(--text-color);
-    background-color: var(--bg-color);
+    color: theme.$text-color;
+    background-color: theme.$bg-color;
 }
 
 .page {
@@ -43,7 +44,7 @@ body {
 //-------------------------------
 
 a, .a {
-  color: var(--link-color);
+  color: theme.$link-color;
   text-decoration: none;
   position: relative;
   border-bottom: 0.18rem solid transparent;
@@ -65,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: variables.$base-font-weight-bold;
   line-height: 1.1;
-  color: var(--text-color);
+  color: theme.$text-color;
   text-rendering: optimizeLegibility;
 }
 
@@ -90,7 +91,7 @@ h4, h5, h6 {
 
 b,
 strong {
-  color: var(--text-color);
+  color: theme.$text-color;
 }
 
 dt {
@@ -104,17 +105,17 @@ dd {
 abbr {
   font-size: 85%;
   font-weight: variables.$base-font-weight-bold;
-  color: var(--text-color);
+  color: theme.$text-color;
   text-transform: uppercase;
 
   &[title] {
     cursor: help;
-    border-bottom: 1px dotted var(--text-color-light);
+    border-bottom: 1px dotted theme.$text-color-light;
   }
 }
 
 strong {
-    color: var(--text-color);
+    color: theme.$text-color;
 }
 
 // Lists, blockquotes
@@ -131,7 +132,7 @@ ul, ol, dl {
 hr {
   margin-bottom: 4em;
   max-width: 30%;
-  border: 0.1em solid var(--shadow-color);
+  border: 0.1em solid theme.$shadow-color;
 }
 
 img {

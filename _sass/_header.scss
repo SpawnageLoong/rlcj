@@ -3,6 +3,7 @@
 
 @use "mixins";
 @use "variables";
+@use "theme";
 
 header {
   overflow: hidden;
@@ -12,7 +13,7 @@ header {
 .logo {
   font-size: 3.5rem;
   font-weight: variables.$base-font-weight-bold;
-  color: var(--link-color);
+  color: theme.$link-color;
 
   .logosvg {
       height: 2.7rem;
@@ -36,7 +37,7 @@ header {
         margin-right: 0px;
       }
       a {
-        color: var(--text-color-light);
+        color: theme.$text-color-light;
         font-size: variables.$base-font-size;
         font-weight: variables.$base-font-weight;
         display: block;
@@ -62,7 +63,7 @@ header {
   }
   li a {
     display: block;
-    color: var(--text-color-light);
+    color: theme.$text-color-light;
     text-align: center;
     font-size: 1.5rem;
     width: 2.5rem;
