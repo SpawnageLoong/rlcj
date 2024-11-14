@@ -1,6 +1,8 @@
 // Base
 //-------------------------------
 
+@use "variables";
+
 *,
 *::before,
 *::after {
@@ -12,8 +14,8 @@
 }
 
 body {
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+    font-size: variables.$base-font-size;
+    line-height: variables.$base-line-height;
     color: var(--text-color);
     background-color: var(--bg-color);
 }
@@ -29,7 +31,7 @@ body {
 
 @media (max-width: 48rem) {
     body {
-      font-size: $mobile-font-size;
+      font-size: variables.$mobile-font-size;
     }
     .wrapper {
       width: 90%;
@@ -61,7 +63,7 @@ a, .a {
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
-  font-weight: $base-font-weight-bold;
+  font-weight: variables.$base-font-weight-bold;
   line-height: 1.1;
   color: var(--text-color);
   text-rendering: optimizeLegibility;
@@ -92,7 +94,7 @@ strong {
 }
 
 dt {
-  font-weight: $base-font-weight-bold;
+  font-weight: variables.$base-font-weight-bold;
 }
 
 dd {
@@ -101,7 +103,7 @@ dd {
 
 abbr {
   font-size: 85%;
-  font-weight: $base-font-weight-bold;
+  font-weight: variables.$base-font-weight-bold;
   color: var(--text-color);
   text-transform: uppercase;
 
