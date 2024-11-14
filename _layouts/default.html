@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include main/head.html %}
+    </head>
+
+    <body>
+        <div class="wrapper" id="blep">
+            {% include main/header.html %}
+
+            {{ content }}
+
+            {% include main/footer.html %}
+        </div>
+
+        {% include externals/scripting.html %}
+    </body>
+</html>
