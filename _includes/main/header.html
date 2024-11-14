@@ -16,42 +16,42 @@
       {% if site.author.youtube %}
       <li>
           <a href="https://youtube.com/{{ site.author.youtube }}" target="_blank" class="smaller">
-            <span class="simple-icons--youtube"></span>
+            <span class="line-md--youtube"></span>
           </a>
       </li>
       {% endif %}
-      {% if site.author.stackoverflow %}
+      {% if site.author.linkedin %}
       <li>
-          <a href="https://stackoverflow.com/{{ site.author.stackoverflow }}" target="_blank" class="smaller">
-            <span class="simple-icons--stackoverflow"></span>
+          <a href="https://linkedin.com/{{ site.author.linkedin }}" target="_blank" class="smaller">
+            <span class="line-md--linkedin"></span>
           </a>
       </li>
       {% endif %}
       {% if site.author.twitter %}
       <li>
           <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" class="smaller">
-            <span class="simple-icons--x"></span>
+            <span class="line-md--twitter-x-alt"></span>
           </a>
       </li>
       {% endif %}
       {% if site.author.github %}
       <li>
           <a href="https://github.com/{{ site.author.github }}" target="_blank" class="smaller">
-            <span class="simple-icons--github"></span>
+            <span class="line-md--github-loop"></span>
           </a>
       </li>
       {% endif %}
       {% if site.author.mail %}
       <li>
           <a href="mailto:{{ site.author.mail }}" target="_blank">
-            <span class="simple-icons--gmail"></span>
+            <span class="line-md--email"></span>
           </a>
       </li>
       {% endif %}
       {% if site.author.rss == true %}
       <li>
           <a href="{{ '/feed.xml' | prepend: site.baseurl }}" target="_blank">
-              <span class="simple-icons--rss"></span>
+              <span class="line-md--rss"></span>
           </a>
       </li>
       {% endif %}

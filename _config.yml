@@ -32,9 +32,7 @@ author:
   twitter                   : twitter-user-name
   github                    : github-user-name
   youtube                   : youtube-user-name
-  stackoverflow             : stackoverflow-user-name
-  disqus                    : rlcj # your disqus site name
-  google_analytics          : # 'UA-XXXXXXXX-X'
+  linkedin                  : linkedin-user-name
   photo                     : "assets/images/me2.png"
   photo2x                   : "assets/images/me.png"
 
@@ -79,15 +77,3 @@ exclude                    : ["README.md", "README.html"]
 # Sass settings
 sass:
   sass_dir                : _sass
-  style                   : compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings               : all
-  endings                 : all
-  comments                : ["<!-- ", " -->"]
-  blanklines              : true
-  profile                 : false
-  ignore:
-  envs                    : [local]
