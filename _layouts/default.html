@@ -5,14 +5,11 @@
     </head>
 
     <body>
-        <div class="wrapper" id="blep">
+        <div class="wrapper">
             {% include main/header.html %}
-
             {{ content }}
-
-            {% include main/footer.html %}
         </div>
-
+        {% include main/footer.html %}
         {% include externals/scripting.html %}
     </body>
 </html>
