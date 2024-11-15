@@ -43,7 +43,8 @@ author:
 ## You should not change anything here unless you know what you are doing
 
 # Gems
-# plugins:
+plugins:
+  - jekyll-paginate
 
 # Permalinks
 permalink                    : posts/:slug
