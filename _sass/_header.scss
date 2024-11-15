@@ -16,9 +16,11 @@ header {
   color: theme.$link-color;
 
   .logosvg {
-      height: 2.7rem;
-      -webkit-filter: var(--invert-logo-color);
-              filter: var(--invert-logo-color);
+      height: 3rem;
+      position: relative;
+      top: 0px;
+      -webkit-filter: invert(1);
+              filter: invert(1);
   }
 }
 
