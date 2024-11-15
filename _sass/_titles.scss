@@ -1,0 +1,69 @@
+// Centered page, post titles and subtitles
+//-------------------------------
+
+@use "mixins";
+@use "variables";
+@use "theme";
+
+.page-title-container,
+.post-title-container {
+    width: 100%;
+    margin-bottom: 6rem;
+    height: 20rem;
+
+    text-align: center;
+    position: relative;
+
+    h1 {
+      font-weight: variables.$base-font-weight-bold;
+      font-size: variables.$post-title-size;
+      border: 0; // reset
+      a {
+        display: block; // slide border needs to cover the whole heading
+        @include mixins.border-slide(left)
+      }
+    }
+
+    // heading container
+    .heading-container {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+}
+
+//  Post meta under post title
+.post-meta {
+  font-weight: variables.$base-font-weight;
+  font-size: 22px;
+  color: theme.$text-color-light;
+
+  span {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.85em;
+
+    a {
+      color: theme.$text-color-light;
+      text-transform: lowercase;
+      margin: .2em .25em;
+    }
+  }
+
+}
+
+@media (max-width: 48rem) {
+    .page-title,
+    .post-title {
+        height: 10rem;
+        margin-bottom: 2rem;
+
+        h1 {
+          font-size: 2.5rem;
+        }
+    }
+    .post-meta {
+      font-size: variables.$mobile-font-size;
+    }
+}

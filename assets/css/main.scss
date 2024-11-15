@@ -8,6 +8,9 @@
 @use "footer";
 @use "icons";
 
+@use "titles";
+
+// Show the page only after all styles are loaded
 html {
   visibility: visible;
   opacity: 1;
