@@ -6,11 +6,7 @@ pagination:
 ---
 
 {% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  {{ post.excerpt }}
+  {% include blog.html %}
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
