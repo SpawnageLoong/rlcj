@@ -74,7 +74,10 @@ defaults:
 # Handling Reading
 exclude                    : ["README.md", "README.html"]
 
-
 # Sass settings
 sass:
   sass_dir                : _sass
+
+# Plugin settings
+paginate: 5
+paginate_path: "/page:num/"
