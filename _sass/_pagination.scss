@@ -1,0 +1,49 @@
+// Pagination
+//-------------------------------
+// Super lightweight (HTML-wise) blog pagination. `span`s are provided for when there are no more previous or next posts to show.
+
+@use "theme";
+@use "mixins";
+
+.pagination {
+  overflow: hidden;
+  max-width: 30%;
+  margin: 0 auto 4rem auto;
+  color: theme.$text-color-light;
+
+  > ul {
+    overflow: hidden;
+    list-style: none;
+    max-height: 3rem;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  hr {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+// Pagination items can be `span`s or `a`s
+.pagination-item {
+      display: inline-block;
+      width: auto;
+
+    &-prev {
+      margin-bottom: 0;
+      float: left;
+      a {
+        color: theme.$link-color;
+        @include mixins.border-slide(right);
+      }
+    }
+    &-next {
+      margin-left: -1px;
+      text-align: right;
+      float: right;
+      a {
+        color: theme.$link-color;
+        @include mixins.border-slide(left);
+      }
+    }
+}

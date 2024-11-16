@@ -6,20 +6,20 @@
 @use "base";
 
 @use "header";
-//@use "articles";
+@use "articles";
 @use "titles";
 @use "hero";
 
 @use "components";
 
-//@use "notices";
+@use "notices";
 @use "blockquote";
-//@use "table";
-//@use "code";
+@use "table";
+@use "code";
 
-//@use "404";
-//@use "jekyll-github";
-//@use "pagination";
+@use "glitch";
+@use "jekyll-github";
+@use "pagination";
 @use "footer";
 
 @use "icons";
