@@ -1,0 +1,26 @@
+//-------------------------------
+// Blockquotes
+//-------------------------------
+
+@use "variables";
+@use "theme";
+
+blockquote {
+  padding: 0 0 4px 15px;
+  margin: 0 0 2rem -1rem;
+  font-size: variables.$base-font-size;
+  font-weight: variables.$base-font-weight;
+  font-style: italic;
+  line-height: variables.$base-line-height;
+  color: theme.$text-color-light;
+  border-left: 3px solid theme.$text-color-light;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 48rem) {
+  blockquote {
+    margin: 0 0 2rem 0;
+  }
+}
