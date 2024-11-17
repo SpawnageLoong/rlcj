@@ -28,7 +28,7 @@ pagination:
   
       <li class="pagination-item-next" >
             {% if paginator.next_page %}
-        <a rel="next" href="{{ site.baseurl }}/page/{{paginator.next_page}}/">Next &raquo;</a>
+        <a rel="next" href="{{ site.baseurl }}/{{paginator.next_page}}/">Next &raquo;</a>
         {% else %}
         <span>Next &raquo;</span>
             {% endif %}
