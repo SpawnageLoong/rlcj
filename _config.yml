@@ -38,8 +38,7 @@ author:
   github                    : github-user-name
   youtube                   : youtube-user-name
   linkedin                  : linkedin-user-name
-  photo                     : "assets/images/me2.png"
-  photo2x                   : "assets/images/me.png"
+  photo                     : /assets/images/me.png
 
 ## !!
 ## Advanced blog settings

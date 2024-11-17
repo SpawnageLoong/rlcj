@@ -33,32 +33,6 @@
 
 }
 
-.tag-title-container {
-    width: 100%;
-    margin-bottom: 6rem;
-
-    text-align: center;
-    position: relative;
-
-    h1 {
-      font-weight: variables.$base-font-weight-bold;
-      font-size: variables.$post-title-size;
-      border: 0; // reset
-      a {
-        display: block; // slide border needs to cover the whole heading
-        @include mixins.border-slide(left)
-      }
-    }
-
-    // heading container
-    .heading-container {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-}
-
 //  Post meta under post title
 .post-meta {
   font-weight: variables.$base-font-weight;
