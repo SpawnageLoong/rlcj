@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Example content
+date:   2024-11-17 10:29:58 +0800
 tags:
   - jekyll
-  - dactl
+  - rlcj
 description: >
   Howdy! This is an example blog post that shows several types of HTML content
   supported in this theme.

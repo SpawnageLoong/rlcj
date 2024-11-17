@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to rlcj!"
 date:   2024-11-14 18:59:58 +0800
 tags: 
   - jekyll 
