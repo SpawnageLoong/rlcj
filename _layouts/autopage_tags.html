@@ -1,8 +1,5 @@
 ---
 layout: default
-
-pagination:
-  enabled: true
 ---
 
 <div class="page-title-container">
@@ -11,6 +8,8 @@ pagination:
     <span>Posts with the #{{ page.autopages.display_name }} tag:</span>
   </div>
 </div>
+
+{{ content }}
 
 {% for post in paginator.posts %}
   {% include blog.html %}

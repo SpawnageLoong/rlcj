@@ -52,24 +52,9 @@ gems:
 # Permalinks
 permalink                    : /posts/:slug
 
-# Tags
-collections:
-  projects:
-    output: true
-    permalink: /projects/:slug/
-defaults:
-  -
-    scope:
-      path: ""
-      type: tags
-    values:
-      layout: blog-by-tag
-  -
-    scope:
-      path: ""
-      type: projects
-    values:
-      layout: blog-by-project
+# Collections
+# collections:
+
 
 # Handling Reading
 exclude                    : ["README.md", "README.html"]
