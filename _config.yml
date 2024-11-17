@@ -6,11 +6,25 @@ url                          : "" # the base hostname & protocol for your site
                                   # `http://<username>.github.io` - for GitHub
 
 blog:
-  title                      : rlcj
-  description                : >
+  title                       : rlcj
+  description                 : >
                                this should contain a proper description
 
-# Layout configuration
+  ## !!
+  ## Untested blog settings
+  ## You should not change anything here unless you know what you are doing
+  ## These settings were copied over from dactl without fully testing the effects of changing them
+  hero_layout                : true # turn on hero layout for blog and posts
+  hero_placeholder           : "assets/images/generic_hero.jpg" # placeholder for hero image
+  excerpts                   : true # show excerpts instead of full post content on blog page
+  inline_footnotes           : true # enable/disable barefoot inline footnotes
+  titles_only                : false # show post titles only on main blog page
+
+  # Fonts
+  font                       : '"Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
+  load_google_fonts          : 'Rubik:400,400italic,700,700italic'
+
+  # Layout configuration
   logo_path                  : "assets/images/logo.svg" # path to logo file
   search_path                : # "yourgitusername.github.io"
                                # needed for searchbox in archive page
@@ -26,22 +40,6 @@ author:
   linkedin                  : linkedin-user-name
   photo                     : "assets/images/me2.png"
   photo2x                   : "assets/images/me.png"
-
-## !!
-## Untested blog settings
-## You should not change anything here unless you know what you are doing
-## These settings were copied over from dactl without fully testing the effects of changing them
-blog:
-  hero_layout                : true # turn on hero layout for blog and posts
-  hero_placeholder           : "assets/images/generic_hero.jpg" # placeholder for hero image
-  excerpts                   : true # show excerpts instead of full post content on blog page
-  inline_footnotes           : true # enable/disable barefoot inline footnotes
-  titles_only                : false # show post titles only on main blog page
-
-  # Fonts
-  font                       : '"Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
-  load_google_fonts          : 'Rubik:400,400italic,700,700italic'
-
 
 ## !!
 ## Advanced blog settings
