@@ -18,7 +18,7 @@ Please make sure to do the following for each tag:
 
 Create a .md file within `_my_tags` folder with the name of your category, e.g. `cool-stuff.md`. This file needs to look like this:
 
-{% highlight markdown %}
+{% highlight yaml %}
 ---
 slug: cool-stuff
 name: Cool Stuff
