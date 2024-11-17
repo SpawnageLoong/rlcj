@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to rlcj!"
-date:   2024-11-14 18:59:58 +0800
+date:   2024-11-17 15:27:00 +0800
 tags: 
   - jekyll 
   - update
