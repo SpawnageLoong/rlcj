@@ -5,7 +5,7 @@
 
 @use "theme";
 
-@mixin notice($notice_bg, $notice-border-color, $notice-icon, $notice-icon-color) {
+@mixin notice($notice_bg, $notice-border-color, $notice-icon) {
   padding: 1rem 1rem 1rem 5rem;
   background-color: theme.$code-bg-color;
   font-size: 0.85em;
@@ -24,16 +24,12 @@
     }
 
   &:after {
-      font-family: 'icomoon';
       content: $notice-icon;
-      color: $notice-icon-color;
       display: block;
-      font-size: 1.25em;
-      font-weight: normal;
       left: 2rem;
       position: absolute;
       top: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -37.5%);
     }
     p:last-child {
       margin-bottom: 0;
@@ -43,26 +39,23 @@
 .notice {
   $notice-bg: #d6e3ea;
   $notice-border-color: rgba(200, 212, 218, .4);
-  $notice-icon: '\e88e';
-  $notice-icon-color: #596267;
+  $notice-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2em' height='2em' viewBox='0 0 24 24'%3E%3Cpath fill='%23596267' d='M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8'/%3E%3C/svg%3E");
 
-  @include notice($notice-bg, $notice-border-color, $notice-icon, $notice-icon-color)
+  @include notice($notice-bg, $notice-border-color, $notice-icon)
 }
 
 .notice-alert {
   $notice-alert-bg: #eae6ca;
   $notice-border-color: rgba(222, 218, 192, .4);
-  $notice-alert-icon: '\e002';
-  $notice-alert-icon_color: #77703a;
+  $notice-alert-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2em' height='2em' viewBox='0 0 24 24'%3E%3Cpath fill='%2377703a' d='M2.725 21q-.275 0-.5-.137t-.35-.363t-.137-.488t.137-.512l9.25-16q.15-.25.388-.375T12 3t.488.125t.387.375l9.25 16q.15.25.138.513t-.138.487t-.35.363t-.5.137zm1.725-2h15.1L12 6zM12 18q.425 0 .713-.288T13 17t-.288-.712T12 16t-.712.288T11 17t.288.713T12 18m0-3q.425 0 .713-.288T13 14v-3q0-.425-.288-.712T12 10t-.712.288T11 11v3q0 .425.288.713T12 15m0-2.5'/%3E%3C/svg%3E");
 
-  @include notice($notice-alert-bg, $notice-border-color, $notice-alert-icon, $notice-alert-icon-color)
+  @include notice($notice-alert-bg, $notice-border-color, $notice-alert-icon)
 }
 
 .notice-success {
   $notice-success-bg: #d6ead8;
   $notice-border-color: rgba(202, 220, 204, .4);
-  $notice-success-icon: '\e834';
-  $notice-success-icon_color: #506b53;
+  $notice-success-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2em' height='2em' viewBox='0 0 24 24'%3E%3Cpath fill='%23506b53' d='m10.6 13.4l-2.15-2.15q-.275-.275-.7-.275t-.7.275t-.275.7t.275.7L9.9 15.5q.3.3.7.3t.7-.3l5.65-5.65q.275-.275.275-.7t-.275-.7t-.7-.275t-.7.275zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z'/%3E%3C/svg%3E");
 
-  @include notice($notice-success-bg, $notice-border-color, $notice-success-icon, $notice-success-icon-color)
+  @include notice($notice-success-bg, $notice-border-color, $notice-success-icon)
 }
