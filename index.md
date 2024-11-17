@@ -10,16 +10,31 @@ pagination:
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
-<ul>
-  {% if paginator.previous_page %}
-  <li>
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li>
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  </li>
-  {% endif %}
-</ul>
+<nav class="pagination" role="navigation">
+  <hr/>
+    <ul>
+      <li class="pagination-item-prev" >
+            {% if paginator.previous_page %}
+        {% if paginator.page == 2 %}
+              <a rel="prev" href="{{ site.baseurl }}/">&laquo; Previous</a>
+          {% else %}
+          <a rel="prev" href="{{ site.baseurl }}/page/{{paginator.previous_page}}/">&laquo; Previous</a>
+          {% endif %}
+        {% else %}
+        <span>&laquo; Previous</span>
+            {% endif %}
+      </li>
+  
+  
+      <li class="pagination-item-next" >
+            {% if paginator.next_page %}
+        <a rel="next" href="{{ site.baseurl }}/page/{{paginator.next_page}}/">Next &raquo;</a>
+        {% else %}
+        <span>Next &raquo;</span>
+            {% endif %}
+      </li>
+  
+    </ul>
+  <hr/>
+</nav>
 {% endif %}
