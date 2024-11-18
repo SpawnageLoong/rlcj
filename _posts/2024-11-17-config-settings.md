@@ -26,8 +26,7 @@ blog:
                                this should contain a proper description
 # Layout configuration
   logo_path                  : "assets/images/logo.svg" # path to logo file
-  search_path                : # "yourgitusername.github.io"
-                               # needed for searchbox in archive page
+
 # Author info
 author:
   fullname                  : Your Name
@@ -61,6 +60,4 @@ url                         : "" # the base hostname & protocol for your site
 * `github` - Your Github username
 * `youtube` - Your YouTube username
 * `stackoverflow` - Your Stackoverflow username
-* `disqus` - Your Disqus site name.
 * `photo` - Avatar or photo of you, used on About page.
-* `photo2x` - Same as above but in higher resolution.

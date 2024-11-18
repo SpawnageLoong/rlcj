@@ -8,7 +8,6 @@ tags:
   - howto
 hero: /uploads/2024-11-17-yaml-frontmatter/hero.jpg
 overlay: red
-link: https://daringfireball.net/
 ---
 
 In order to use rlcj's post images with overlays you'll need to learn how to set them. You do that in post's YAML frontmatter and I'll show you how.
@@ -22,6 +21,7 @@ Each Jekyll post starts with YAML Front [^1]. For example, this is how this post
 ---
 layout: post
 title: 'How do I write posts in rlcj Jekyll theme?'
+date: 2024-11-17 14:34:00 +0800
 tags:
   - jekyll
   - rlcj
@@ -71,9 +71,12 @@ overlay: purple
 ### Link post
 I've included link post functionality (a'la [Daring Fireball](http://daringfireball.net/)) in rlcj.  
 If you put webpage's address in that field then that post becomes a link post.  
-Title of that post (on blog page only) becomes a link to the webpage you set the address to. To access the content of the post you need to click on 'Read more' link. To access a link post content in layout with titles only you need to click a meta link which shows up between date and tags.
+Title of that post becomes a link to the webpage you set the address to. To access the content of the post you need to click on 'Read more' link. To access a link post content in layout with titles only you need to click a meta link which shows up between date and tags.
 {% highlight yaml %}
 link: https://link-to-some-page.com
 {% endhighlight %}
 
+Do note that you might confuse your readers with link posts as clicking the obvious post name will send them somewhere else.
+
+<hr>
 [^1]: Everything in between those two `---`
