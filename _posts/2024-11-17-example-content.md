@@ -13,15 +13,16 @@ overlay: green
 published: true
 ---
 
-Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+Howdy! This is an example blog post that shows several types of HTML content supported in this theme. This is a leading paragraph and should be used as a short introduction to your content.
 {: .lead}
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-<!–-break-–>
+The content after the `{: .lead}` will not appear in the post preview on the home page or in the post list. You can exclude the `{: .lead}` tag and the preview will show as much as can fit.
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+This text is in **bold** font by using `**bold**`. This text is in _italic_ font by using `_italic_`. This text is in ~~strikethrough~~ by using `~~strikethrough~~`. This text is in <sup>superscript</sup> by using `<sup>`. This text is in <sub>subscript</sub> by using `<sub>`. This text is in <mark>highlighted</mark> font by using `<mark>`.
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+> This is a block quote. You can create a block quote by using `>` at the beginning of the line.
+
+This is a notice block. You can create a notice block by using `{: .notice}`. There are other styles available like `{: .notice-alert}` and `{: .notice-success}`. As you can see, inline code tends to blend in with notice blocks.
 {: .notice}
 
 ## Inline HTML elements
@@ -111,7 +112,11 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur e
 
 ## Math
 
+Block math:
+
 $$ \frac{1}{1 + \frac{1}{a}} $$
+
+Inline math: $$ \frac{1}{1 + \frac{1}{a}} $$
 
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
 Nullam id [^2] dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
