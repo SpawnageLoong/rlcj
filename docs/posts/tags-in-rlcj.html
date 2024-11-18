@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>html{visibility: hidden;opacity:0; background-color: #1c1c1c;}</style>
+        <meta charset="utf-8">
+
+<!-- Styles -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,400italic,700,700italic">
+<style>
+    html {
+      font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+</style>
+
+
+<!-- Scripts -->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+  <div class="menu">
+    <div class="logo">
+      <a href="/">rlcj</a>
+      <span class="logo-css"></span>
+    </div>
+
+      <ul>
+          <li><a href="/about">about</a></li>
+          <li><a href="/archive">archive</a></li>
+      </ul>
+  </div>
+  <div class="social">
+    <ul>
+      
+      <li>
+          <a href="https://youtube.com/youtube-user-name" target="_blank" class="smaller">
+            <span class="line-md--youtube"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="https://linkedin.com/linkedin-user-name" target="_blank" class="smaller">
+            <span class="line-md--linkedin"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="https://twitter.com/twitter-user-name" target="_blank" class="smaller">
+            <span class="line-md--twitter-x-alt"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="https://github.com/github-user-name" target="_blank" class="smaller">
+            <span class="line-md--github-loop"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="mailto:your@email.com" target="_blank">
+            <span class="line-md--email"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="/feed.xml" target="_blank">
+              <span class="line-md--rss"></span>
+          </a>
+      </li>
+      
+    </ul>
+  </div>
+</header>
+            
+
+<article class="post">
+
+  
+  
+
+
+
+
+
+<style>
+  .tags-in-rlcj {
+    margin-bottom: 2em;
+  }
+  .tags-in-rlcj::before {
+    background-image: url('/uploads/2024-11-17-tags-in-rlcj/hero.jpg');
+    background-size: cover;
+    -webkit-filter: grayscale(1) brightness(0.5) contrast(0.5);
+            filter: grayscale(1) brightness(0.5) contrast(0.5);
+
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .tags-in-rlcj::after {
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    background-color: rgba(255,100,0,0.5);
+
+    /*mix-blend-mode: darken;
+    mix-blend-mode: color-burn;
+    mix-blend-mode: hard-light;*/
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+
+  .tags-in-rlcj-container,
+  .tags-in-rlcj-container::before,
+  .tags-in-rlcj-container::after {
+    height: 25rem;
+  }
+
+  .tags-in-rlcj-bleed-container,
+  .tags-in-rlcj-bleed-container::before,
+  .tags-in-rlcj-bleed-container::after {
+    height: 35rem;
+  }
+
+    @media (max-width: 48rem) {
+        .tags-in-rlcj-container,
+        .tags-in-rlcj-container::before,
+        .tags-in-rlcj-container::after{
+            height: 20rem;
+            margin-bottom: 3rem;
+        }
+    }
+</style>
+  
+
+  <!-- Post title (& hero image) container -->
+  <div class="post-title-container
+  
+  tags-in-rlcj tags-in-rlcj-bleed-container bleed-hero-container
+    ">
+    <!--Post hero image source-->
+    
+      
+    
+    <!-- Post title -->
+    <div class="heading-container hero-heading hero-heading-post">
+      <h1>
+        
+          Tags in rlcj
+        
+      </h1>
+    <!-- Post meta -->
+      <div class="post-meta">
+        <span>17/11/2024</span>
+        <span>
+          
+              <a href="/tag/rlcj">#rlcj</a>
+          
+              <a href="/tag/howto">#howto</a>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+    <!-- Post content -->
+    <p class="lead">Tags are built using the auto-pages features of <a href="https://github.com/sverrirs/jekyll-paginate-v2/tree/master">jekyll-paginate-v2</a>. This is a plugin that automatically generates pages for each tag and extends the default Jekyll pagination with additional features such as filtering posts by tags, categories and collections.</p>
+
+<p></p>
+
+<h2 id="how-to-add-a-new-tag">How to add a new tag</h2>
+
+<p>Tags are automatically indexed when you add them to a post. To add a new tag, simply add it to the <code class="language-plaintext highlighter-rouge">tags</code> field in the post’s front matter. For example, to add the tag <code class="language-plaintext highlighter-rouge">dactl</code> to a post, you would add the following to the post’s front matter:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s1">'</span><span class="s">My</span><span class="nv"> </span><span class="s">Post</span><span class="nv"> </span><span class="s">Title'</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2024-11-17 13:49:00 +0800</span>
+<span class="na">tags</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">dactl</span>
+<span class="nn">---</span></code></pre></figure>
+
+<p>That’s it! The tag <code class="language-plaintext highlighter-rouge">dactl</code> will now be indexed and will appear at the address <code class="language-plaintext highlighter-rouge">/tag/dactl</code>.</p>
+
+<h2 id="tag-pages">Tag pages</h2>
+
+<p>All tag pages use the layout <code class="language-plaintext highlighter-rouge">autopage_tags.html</code>. This layout is responsible for displaying the tag’s name, description, and a list of posts that have that tag. The layout is located in the <code class="language-plaintext highlighter-rouge">_layouts</code> directory. At this point in time, it’s basically the same as the default blog page layout.</p>
+
+</article>
+        </div>
+        <footer>
+  <span>this should contain a proper description
+</span>
+  <span>written by Your Name</span>
+</footer>
+        <!-- load external js scripts -->
+ 
+    </body>
+</html>

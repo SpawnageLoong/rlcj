@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>html{visibility: hidden;opacity:0; background-color: #1c1c1c;}</style>
+        <meta charset="utf-8">
+
+<!-- Styles -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,400italic,700,700italic">
+<style>
+    html {
+      font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+</style>
+
+
+<!-- Scripts -->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+  <div class="menu">
+    <div class="logo">
+      <a href="/">rlcj</a>
+      <span class="logo-css"></span>
+    </div>
+
+      <ul>
+          <li><a href="/about">about</a></li>
+          <li><a href="/archive">archive</a></li>
+      </ul>
+  </div>
+  <div class="social">
+    <ul>
+      
+      <li>
+          <a href="https://youtube.com/youtube-user-name" target="_blank" class="smaller">
+            <span class="line-md--youtube"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="https://linkedin.com/linkedin-user-name" target="_blank" class="smaller">
+            <span class="line-md--linkedin"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="https://twitter.com/twitter-user-name" target="_blank" class="smaller">
+            <span class="line-md--twitter-x-alt"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="https://github.com/github-user-name" target="_blank" class="smaller">
+            <span class="line-md--github-loop"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="mailto:your@email.com" target="_blank">
+            <span class="line-md--email"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="/feed.xml" target="_blank">
+              <span class="line-md--rss"></span>
+          </a>
+      </li>
+      
+    </ul>
+  </div>
+</header>
+            
+
+<article class="post">
+
+  
+  
+
+
+
+
+
+<style>
+  .post-excerpts-lead-paragraphs {
+    margin-bottom: 2em;
+  }
+  .post-excerpts-lead-paragraphs::before {
+    background-image: url('/uploads/2024-11-17-post-excerpts-lead-paragraphs/hero.jpg');
+    background-size: cover;
+    -webkit-filter: grayscale(1) brightness(0.5) contrast(0.5);
+            filter: grayscale(1) brightness(0.5) contrast(0.5);
+
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .post-excerpts-lead-paragraphs::after {
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    background-color: rgba(0,100,255,0.5);
+
+    /*mix-blend-mode: darken;
+    mix-blend-mode: color-burn;
+    mix-blend-mode: hard-light;*/
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+
+  .post-excerpts-lead-paragraphs-container,
+  .post-excerpts-lead-paragraphs-container::before,
+  .post-excerpts-lead-paragraphs-container::after {
+    height: 25rem;
+  }
+
+  .post-excerpts-lead-paragraphs-bleed-container,
+  .post-excerpts-lead-paragraphs-bleed-container::before,
+  .post-excerpts-lead-paragraphs-bleed-container::after {
+    height: 35rem;
+  }
+
+    @media (max-width: 48rem) {
+        .post-excerpts-lead-paragraphs-container,
+        .post-excerpts-lead-paragraphs-container::before,
+        .post-excerpts-lead-paragraphs-container::after{
+            height: 20rem;
+            margin-bottom: 3rem;
+        }
+    }
+</style>
+  
+
+  <!-- Post title (& hero image) container -->
+  <div class="post-title-container
+  
+  post-excerpts-lead-paragraphs post-excerpts-lead-paragraphs-bleed-container bleed-hero-container
+    ">
+    <!--Post hero image source-->
+    
+      
+    
+    <!-- Post title -->
+    <div class="heading-container hero-heading hero-heading-post">
+      <h1>
+        
+          Post excerpts and leading paragraphs
+        
+      </h1>
+    <!-- Post meta -->
+      <div class="post-meta">
+        <span>17/11/2024</span>
+        <span>
+          
+              <a href="/tag/rlcj">#rlcj</a>
+          
+              <a href="/tag/howto">#howto</a>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+    <!-- Post content -->
+    <p class="lead">By default, rlcj’s blog layout displays post excerpts which are leading paragraphs as well. This requires some manual work on your part when writing a post but don’t worry - it’s really easy. Read on for more info.</p>
+
+<h2 id="post-excerpts">Post excerpts</h2>
+<p>First, let’s see how this and the above paragraph looks like in markdown:
+</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">By default, rlcj's blog layout displays post excerpts which are leading paragraphs as well. This requires some manual work on your part when writing a post but don't worry - it's really easy. Read on for more info.
+{: .lead}
+
+<span class="gu">## Post excerpts</span>
+First, let's see how this and the above paragraph looks like in markdown:
+<span class="nt">&lt;</span><span class="err">!–</span><span class="na">-break-</span><span class="err">–</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>As you can see above there are two things which are visible only in the post’s markdown version. You won’t see them here because they got processed by Jekyll and ‘thrown out’ while generating html version of this post.</p>
+
+<p><code class="language-plaintext highlighter-rouge">{: .lead}</code> inserted on a new line after a paragraphtells Jekyll’s markdown processor (rlcj uses <a href="https://kramdown.gettalong.org/">kramdown</a>) to add class <code class="language-plaintext highlighter-rouge">.lead</code> to the above <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> tag which results in a leading paragraph.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;!--break--&gt;</code>, inserted on a new line after <code class="language-plaintext highlighter-rouge">{: .lead}</code>, tells Jekyll that it should <a href="https://media.giphy.com/media/l46CxpYSFoFtN11ug/giphy.gif">‘break’</a> the post content at this point, so everything above it will become a post excerpt.</p>
+
+<p class="notice-alert">The order is important here - <code class="language-plaintext highlighter-rouge">&lt;!--break--&gt;</code> comes <strong>after</strong> <code class="language-plaintext highlighter-rouge">{: .lead}</code> and because of that the leading paragraph/ post excerpt has it’s font enlarged both on blog and post pages.</p>
+
+</article>
+        </div>
+        <footer>
+  <span>this should contain a proper description
+</span>
+  <span>written by Your Name</span>
+</footer>
+        <!-- load external js scripts -->
+ 
+    </body>
+</html>

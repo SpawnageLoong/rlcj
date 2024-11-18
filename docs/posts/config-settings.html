@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>html{visibility: hidden;opacity:0; background-color: #1c1c1c;}</style>
+        <meta charset="utf-8">
+
+<!-- Styles -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,400italic,700,700italic">
+<style>
+    html {
+      font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+</style>
+
+
+<!-- Scripts -->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+  <div class="menu">
+    <div class="logo">
+      <a href="/">rlcj</a>
+      <span class="logo-css"></span>
+    </div>
+
+      <ul>
+          <li><a href="/about">about</a></li>
+          <li><a href="/archive">archive</a></li>
+      </ul>
+  </div>
+  <div class="social">
+    <ul>
+      
+      <li>
+          <a href="https://youtube.com/youtube-user-name" target="_blank" class="smaller">
+            <span class="line-md--youtube"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="https://linkedin.com/linkedin-user-name" target="_blank" class="smaller">
+            <span class="line-md--linkedin"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="https://twitter.com/twitter-user-name" target="_blank" class="smaller">
+            <span class="line-md--twitter-x-alt"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="https://github.com/github-user-name" target="_blank" class="smaller">
+            <span class="line-md--github-loop"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="mailto:your@email.com" target="_blank">
+            <span class="line-md--email"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="/feed.xml" target="_blank">
+              <span class="line-md--rss"></span>
+          </a>
+      </li>
+      
+    </ul>
+  </div>
+</header>
+            
+
+<article class="post">
+
+  
+  
+
+
+
+
+
+<style>
+  .config-settings {
+    margin-bottom: 2em;
+  }
+  .config-settings::before {
+    background-image: url('/uploads/2024-11-17-config-settings/hero.jpg');
+    background-size: cover;
+    -webkit-filter: grayscale(1) brightness(0.5) contrast(0.5);
+            filter: grayscale(1) brightness(0.5) contrast(0.5);
+
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .config-settings::after {
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    background-color: rgba(0,100,255,0.5);
+
+    /*mix-blend-mode: darken;
+    mix-blend-mode: color-burn;
+    mix-blend-mode: hard-light;*/
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+
+  .config-settings-container,
+  .config-settings-container::before,
+  .config-settings-container::after {
+    height: 25rem;
+  }
+
+  .config-settings-bleed-container,
+  .config-settings-bleed-container::before,
+  .config-settings-bleed-container::after {
+    height: 35rem;
+  }
+
+    @media (max-width: 48rem) {
+        .config-settings-container,
+        .config-settings-container::before,
+        .config-settings-container::after{
+            height: 20rem;
+            margin-bottom: 3rem;
+        }
+    }
+</style>
+  
+
+  <!-- Post title (& hero image) container -->
+  <div class="post-title-container
+  
+  config-settings config-settings-bleed-container bleed-hero-container
+    ">
+    <!--Post hero image source-->
+    
+      
+    
+    <!-- Post title -->
+    <div class="heading-container hero-heading hero-heading-post">
+      <h1>
+        
+          Layout settings and more in _config.yml
+        
+      </h1>
+    <!-- Post meta -->
+      <div class="post-meta">
+        <span>17/11/2024</span>
+        <span>
+          
+              <a href="/tag/jekyll">#jekyll</a>
+          
+              <a href="/tag/rlcj">#rlcj</a>
+          
+              <a href="/tag/howto">#howto</a>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+    <!-- Post content -->
+    <p class="lead">All of the rlcj’s configurations has to be set in <code class="language-plaintext highlighter-rouge">_config.yml</code> file. Read on for explanation of all of the features that you can toggle, including configuring the layout.</p>
+
+<p>I’ve split rlcj’s <code class="language-plaintext highlighter-rouge">_config.yml</code> into two parts. First part should be configured by you, second contains important Jekyll &amp; build settings and you should leave it alone, unless you know what you are doing.
+</p>
+
+<p>Let’s go through each line in the first, configurable part:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># Base blog settings</span>
+<span class="na">blog</span><span class="pi">:</span>
+  <span class="na">title                      </span><span class="pi">:</span> <span class="s">rlcj</span>
+  <span class="na">description                </span><span class="pi">:</span> <span class="pi">&gt;</span>
+                               <span class="s">this should contain a proper description</span>
+<span class="c1"># Layout configuration</span>
+  <span class="na">logo_path                  </span><span class="pi">:</span> <span class="s2">"</span><span class="s">assets/images/logo.svg"</span> <span class="c1"># path to logo file</span>
+
+<span class="c1"># Author info</span>
+<span class="na">author</span><span class="pi">:</span>
+  <span class="na">fullname                  </span><span class="pi">:</span> <span class="s">Your Name</span>
+  <span class="na">rss                       </span><span class="pi">:</span> <span class="kc">true</span> <span class="c1"># generate RSS feed and show it's icon in header</span>
+  <span class="na">mail                      </span><span class="pi">:</span> <span class="s">your@email.com</span> <span class="c1"># change to your e-mail address</span>
+  <span class="na">twitter                   </span><span class="pi">:</span> <span class="s">twitter-user-name</span>
+  <span class="na">github                    </span><span class="pi">:</span> <span class="s">github-user-name</span>
+  <span class="na">youtube                   </span><span class="pi">:</span> <span class="s">youtube-user-name</span>
+  <span class="na">linkedin                  </span><span class="pi">:</span> <span class="s">linkedin-user-name</span>
+  <span class="na">photo                     </span><span class="pi">:</span> <span class="s2">"</span><span class="s">uploads/me2.png"</span>
+  <span class="na">photo2x                   </span><span class="pi">:</span> <span class="s2">"</span><span class="s">uploads/me.png"</span>
+
+<span class="na">baseurl                     </span><span class="pi">:</span> <span class="s2">"</span><span class="s">/rlcj/"</span> <span class="c1"># the subpath of your site, e.g. /blog/, set to '' in case of hosting on GitHub pages</span>
+                                       <span class="c1"># i.e. `http://&lt;username&gt;.github.io`</span>
+<span class="na">url                         </span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the base hostname &amp; protocol for your site</span></code></pre></figure>
+
+<h2 id="base-blog-settings">Base blog settings</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">title</code> - title of your blog, both in <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> tag and in the header.</li>
+  <li><code class="language-plaintext highlighter-rouge">description</code> - descriptionof your blog, shown in the footer</li>
+</ul>
+
+<h2 id="layout-settings">Layout settings</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">logo_path</code> - Path to an .svg image used as logo</li>
+  <li><code class="language-plaintext highlighter-rouge">search_path</code> - Path to your blog, needed for the DuckDuckGo’s searchbar found in Archive page.</li>
+</ul>
+
+<h2 id="author-info">Author info</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">fullname</code> - Your name and surname or nick, used throughout the blog.</li>
+  <li><code class="language-plaintext highlighter-rouge">rss</code> - true or false - Turn the RSS feeds on or off.</li>
+  <li><code class="language-plaintext highlighter-rouge">mail</code> - Your e-mail address.</li>
+  <li><code class="language-plaintext highlighter-rouge">twitter</code> - Your twitter username</li>
+  <li><code class="language-plaintext highlighter-rouge">github</code> - Your Github username</li>
+  <li><code class="language-plaintext highlighter-rouge">youtube</code> - Your YouTube username</li>
+  <li><code class="language-plaintext highlighter-rouge">stackoverflow</code> - Your Stackoverflow username</li>
+  <li><code class="language-plaintext highlighter-rouge">photo</code> - Avatar or photo of you, used on About page.</li>
+</ul>
+
+</article>
+        </div>
+        <footer>
+  <span>this should contain a proper description
+</span>
+  <span>written by Your Name</span>
+</footer>
+        <!-- load external js scripts -->
+ 
+    </body>
+</html>

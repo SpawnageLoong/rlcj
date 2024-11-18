@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-11-18T15:02:03+08:00</updated><id>/feed.xml</id><author><name>{&quot;fullname&quot;=&gt;&quot;Your Name&quot;, &quot;rss&quot;=&gt;true, &quot;mail&quot;=&gt;&quot;your@email.com&quot;, &quot;twitter&quot;=&gt;&quot;twitter-user-name&quot;, &quot;github&quot;=&gt;&quot;github-user-name&quot;, &quot;youtube&quot;=&gt;&quot;youtube-user-name&quot;, &quot;linkedin&quot;=&gt;&quot;linkedin-user-name&quot;, &quot;photo&quot;=&gt;&quot;/assets/images/me.png&quot;}</name></author><entry><title type="html">Welcome to rlcj!</title><link href="/posts/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to rlcj!" /><published>2024-11-17T15:27:00+08:00</published><updated>2024-11-17T15:27:00+08:00</updated><id>/posts/welcome-to-jekyll</id><content type="html" xml:base="/posts/welcome-to-jekyll"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+<p><a href="https://gratisography.com/photo/cool-cat/">Photo</a> courtesy of <a href="https://gratisography.com">Gratisography</a></p>]]></content><author><name>{&quot;fullname&quot;=&gt;&quot;Your Name&quot;, &quot;rss&quot;=&gt;true, &quot;mail&quot;=&gt;&quot;your@email.com&quot;, &quot;twitter&quot;=&gt;&quot;twitter-user-name&quot;, &quot;github&quot;=&gt;&quot;github-user-name&quot;, &quot;youtube&quot;=&gt;&quot;youtube-user-name&quot;, &quot;linkedin&quot;=&gt;&quot;linkedin-user-name&quot;, &quot;photo&quot;=&gt;&quot;/assets/images/me.png&quot;}</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Notice blocks</title><link href="/posts/notices" rel="alternate" type="text/html" title="Notice blocks" /><published>2024-11-17T15:06:00+08:00</published><updated>2024-11-17T15:06:00+08:00</updated><id>/posts/notices</id><content type="html" xml:base="/posts/notices"><![CDATA[<p class="lead">By default rlcj has a couple of special classes which will turn a paragraph into a notice block when added to it. Read on for information on how to use it.</p>
+
+<h2 id="how-to-create-a-notice-block">How to create a notice block</h2>
+<p>Creating notices from your paragraphs works the same way as creating <a href="LINKILYNKI">leading post paragraphs</a>.<br />
+You need to add a correct class <strong>after</strong> the paragraph:
+&lt;!–-break-–&gt;</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">Sea otters <span class="p">[</span><span class="nv">hold each other’s paws</span><span class="p">](</span><span class="sx">https://www.youtube.com/watch?v=eTvX-CkfqRo</span><span class="p">)</span> when they sleep so they don’t drift apart.  
+That is a fact, look it up on Wikipedia if you don't believe me.
+{: .notice}</code></pre></figure>
+
+<h2 id="available-options">Available options</h2>
+<h3 id="regular-notice-block">Regular notice block</h3>
+<p><code class="language-plaintext highlighter-rouge">{: .notice}</code></p>
+
+<p class="notice">Sea otters <a href="https://www.youtube.com/watch?v=eTvX-CkfqRo">hold each other’s paws</a> when they sleep so they don’t drift apart.<br />
+That is a fact, look it up on Wikipedia if you don’t believe me.</p>
+
+<h3 id="alert-notice-block">Alert notice block</h3>
+<p><code class="language-plaintext highlighter-rouge">{: .notice-alert}</code></p>
+
+<p class="notice-alert">If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.</p>
+
+<h3 id="success-notice-block">Success notice block</h3>
+<p><code class="language-plaintext highlighter-rouge">{: .notice-success}</code></p>
+
+<p class="notice-success">If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.</p>
+
+<h2 id="multi-paragraph-notice-blocks">Multi-paragraph notice blocks</h2>
+<p>The easiest solution I found to wrapping more than paragraph into a notice is just inserting it into a markdown-enabled <code class="language-plaintext highlighter-rouge">div</code> tag, like this:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notice"</span> <span class="na">markdown=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.
+
+A number of dematerialisms concerning textual objectivism
+exist. However, if textual narrative holds, we have to choose between
+precultural theory and the conceptual paradigm of consensus.
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Which, when processed by kramdown, shows up like this:</p>
+<div class="notice">
+  <p>If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.</p>
+
+  <p>A number of dematerialisms concerning textual objectivism
+exist. However, if textual narrative holds, we have to choose between
+precultural theory and the conceptual paradigm of consensus.</p>
+</div>]]></content><author><name>{&quot;fullname&quot;=&gt;&quot;Your Name&quot;, &quot;rss&quot;=&gt;true, &quot;mail&quot;=&gt;&quot;your@email.com&quot;, &quot;twitter&quot;=&gt;&quot;twitter-user-name&quot;, &quot;github&quot;=&gt;&quot;github-user-name&quot;, &quot;youtube&quot;=&gt;&quot;youtube-user-name&quot;, &quot;linkedin&quot;=&gt;&quot;linkedin-user-name&quot;, &quot;photo&quot;=&gt;&quot;/assets/images/me.png&quot;}</name></author><category term="rlcj" /><category term="howto" /><summary type="html"><![CDATA[By default rlcj has a couple of special classes which will turn a paragraph into a notice block when added to it. Read on for information on how to use it.]]></summary></entry><entry><title type="html">Layout settings and more in _config.yml</title><link href="/posts/config-settings" rel="alternate" type="text/html" title="Layout settings and more in _config.yml" /><published>2024-11-17T14:47:00+08:00</published><updated>2024-11-17T14:47:00+08:00</updated><id>/posts/config-settings</id><content type="html" xml:base="/posts/config-settings"><![CDATA[<p class="lead">All of the rlcj’s configurations has to be set in <code class="language-plaintext highlighter-rouge">_config.yml</code> file. Read on for explanation of all of the features that you can toggle, including configuring the layout.</p>
+
+<p>I’ve split rlcj’s <code class="language-plaintext highlighter-rouge">_config.yml</code> into two parts. First part should be configured by you, second contains important Jekyll &amp; build settings and you should leave it alone, unless you know what you are doing.
+&lt;!–-break-–&gt;</p>
+
+<p>Let’s go through each line in the first, configurable part:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># Base blog settings</span>
+<span class="na">blog</span><span class="pi">:</span>
+  <span class="na">title                      </span><span class="pi">:</span> <span class="s">rlcj</span>
+  <span class="na">description                </span><span class="pi">:</span> <span class="pi">&gt;</span>
+                               <span class="s">this should contain a proper description</span>
+<span class="c1"># Layout configuration</span>
+  <span class="na">logo_path                  </span><span class="pi">:</span> <span class="s2">"</span><span class="s">assets/images/logo.svg"</span> <span class="c1"># path to logo file</span>
+
+<span class="c1"># Author info</span>
+<span class="na">author</span><span class="pi">:</span>
+  <span class="na">fullname                  </span><span class="pi">:</span> <span class="s">Your Name</span>
+  <span class="na">rss                       </span><span class="pi">:</span> <span class="kc">true</span> <span class="c1"># generate RSS feed and show it's icon in header</span>
+  <span class="na">mail                      </span><span class="pi">:</span> <span class="s">your@email.com</span> <span class="c1"># change to your e-mail address</span>
+  <span class="na">twitter                   </span><span class="pi">:</span> <span class="s">twitter-user-name</span>
+  <span class="na">github                    </span><span class="pi">:</span> <span class="s">github-user-name</span>
+  <span class="na">youtube                   </span><span class="pi">:</span> <span class="s">youtube-user-name</span>
+  <span class="na">linkedin                  </span><span class="pi">:</span> <span class="s">linkedin-user-name</span>
+  <span class="na">photo                     </span><span class="pi">:</span> <span class="s2">"</span><span class="s">uploads/me2.png"</span>
+  <span class="na">photo2x                   </span><span class="pi">:</span> <span class="s2">"</span><span class="s">uploads/me.png"</span>
+
+<span class="na">baseurl                     </span><span class="pi">:</span> <span class="s2">"</span><span class="s">/rlcj/"</span> <span class="c1"># the subpath of your site, e.g. /blog/, set to '' in case of hosting on GitHub pages</span>
+                                       <span class="c1"># i.e. `http://&lt;username&gt;.github.io`</span>
+<span class="na">url                         </span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the base hostname &amp; protocol for your site</span></code></pre></figure>
+
+<h2 id="base-blog-settings">Base blog settings</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">title</code> - title of your blog, both in <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> tag and in the header.</li>
+  <li><code class="language-plaintext highlighter-rouge">description</code> - descriptionof your blog, shown in the footer</li>
+</ul>
+
+<h2 id="layout-settings">Layout settings</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">logo_path</code> - Path to an .svg image used as logo</li>
+  <li><code class="language-plaintext highlighter-rouge">search_path</code> - Path to your blog, needed for the DuckDuckGo’s searchbar found in Archive page.</li>
+</ul>
+
+<h2 id="author-info">Author info</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">fullname</code> - Your name and surname or nick, used throughout the blog.</li>
+  <li><code class="language-plaintext highlighter-rouge">rss</code> - true or false - Turn the RSS feeds on or off.</li>
+  <li><code class="language-plaintext highlighter-rouge">mail</code> - Your e-mail address.</li>
+  <li><code class="language-plaintext highlighter-rouge">twitter</code> - Your twitter username</li>
+  <li><code class="language-plaintext highlighter-rouge">github</code> - Your Github username</li>
+  <li><code class="language-plaintext highlighter-rouge">youtube</code> - Your YouTube username</li>
+  <li><code class="language-plaintext highlighter-rouge">stackoverflow</code> - Your Stackoverflow username</li>
+  <li><code class="language-plaintext highlighter-rouge">photo</code> - Avatar or photo of you, used on About page.</li>
+</ul>]]></content><author><name>{&quot;fullname&quot;=&gt;&quot;Your Name&quot;, &quot;rss&quot;=&gt;true, &quot;mail&quot;=&gt;&quot;your@email.com&quot;, &quot;twitter&quot;=&gt;&quot;twitter-user-name&quot;, &quot;github&quot;=&gt;&quot;github-user-name&quot;, &quot;youtube&quot;=&gt;&quot;youtube-user-name&quot;, &quot;linkedin&quot;=&gt;&quot;linkedin-user-name&quot;, &quot;photo&quot;=&gt;&quot;/assets/images/me.png&quot;}</name></author><category term="jekyll" /><category term="rlcj" /><category term="howto" /><summary type="html"><![CDATA[All of the rlcj’s configurations has to be set in _config.yml file. Read on for explanation of all of the features that you can toggle, including configuring the layout.]]></summary></entry><entry><title type="html">YAML front matter in posts</title><link href="/posts/yaml-frontmatter" rel="alternate" type="text/html" title="YAML front matter in posts" /><published>2024-11-17T14:34:00+08:00</published><updated>2024-11-17T14:34:00+08:00</updated><id>/posts/yaml-frontmatter</id><content type="html" xml:base="/posts/yaml-frontmatter"><![CDATA[<p class="lead">In order to use rlcj’s post images with overlays you’ll need to learn how to set them. You do that in post’s YAML frontmatter and I’ll show you how.</p>
+
+<h2 id="yaml-front-matter">YAML Front matter</h2>
+<p>Each Jekyll post starts with YAML Front <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. For example, this is how this post would look like if I wanted to use all of the options:
+&lt;!–-break-–&gt;</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s1">'</span><span class="s">How</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">write</span><span class="nv"> </span><span class="s">posts</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">rlcj</span><span class="nv"> </span><span class="s">Jekyll</span><span class="nv"> </span><span class="s">theme?'</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2024-11-17 14:34:00 +0800</span>
+<span class="na">tags</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll</span>
+  <span class="pi">-</span> <span class="s">rlcj</span>
+<span class="na">hero</span><span class="pi">:</span> <span class="s">/assets/hero.jpg</span>
+<span class="na">overlay</span><span class="pi">:</span> <span class="s">purple</span>
+<span class="na">link</span><span class="pi">:</span> <span class="s">https://link-to-some-page.com</span>
+<span class="nn">---</span></code></pre></figure>
+
+<p>As you can see it has a couple of options, some of them are required by Jekyll (layout, title), some are required by rlcj theme when set to default hero layout (hero) and some are completely optional (overlay, link).<br />
+I’ll go through what each option means, what it affects and how to use it.</p>
+
+<h3 id="layout">Layout</h3>
+<p>This just tells Jekyll to use post layout.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">layout</span><span class="pi">:</span> <span class="s">post</span></code></pre></figure>
+
+<h3 id="title">Title</h3>
+<p>Title of the post as seen at the top of this post.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">title</span><span class="pi">:</span> <span class="s1">'</span><span class="s">How</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">write</span><span class="nv"> </span><span class="s">posts</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">rlcj</span><span class="nv"> </span><span class="s">Jekyll</span><span class="nv"> </span><span class="s">theme?'</span></code></pre></figure>
+
+<h3 id="tags">Tags</h3>
+<p>This is how you assign multiple tags to a post.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">tags</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll</span>
+  <span class="pi">-</span> <span class="s">rlcj</span></code></pre></figure>
+
+<h3 id="hero-image">Hero image</h3>
+<p>See that nice picture from unsplash at the top of this page? This is how you set it’s source.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">hero</span><span class="pi">:</span> <span class="s">/assets/hero.jpg</span></code></pre></figure>
+
+<h3 id="hero-overlay">Hero overlay</h3>
+<p>You can choose the color of the image overlay here.
+Currently you can choose from five colors: purple, red, green, blue, orange.
+If you don’t choose a color it will default to a light black.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">overlay</span><span class="pi">:</span> <span class="s">purple</span></code></pre></figure>
+
+<h3 id="link-post">Link post</h3>
+<p>I’ve included link post functionality (a’la <a href="http://daringfireball.net/">Daring Fireball</a>) in rlcj.<br />
+If you put webpage’s address in that field then that post becomes a link post.<br />
+Title of that post becomes a link to the webpage you set the address to. To access the content of the post you need to click on ‘Read more’ link. To access a link post content in layout with titles only you need to click a meta link which shows up between date and tags.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">link</span><span class="pi">:</span> <span class="s">https://link-to-some-page.com</span></code></pre></figure>
+
+<p>Do note that you might confuse your readers with link posts as clicking the obvious post name will send them somewhere else.</p>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Everything in between those two <code class="language-plaintext highlighter-rouge">---</code> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>{&quot;fullname&quot;=&gt;&quot;Your Name&quot;, &quot;rss&quot;=&gt;true, &quot;mail&quot;=&gt;&quot;your@email.com&quot;, &quot;twitter&quot;=&gt;&quot;twitter-user-name&quot;, &quot;github&quot;=&gt;&quot;github-user-name&quot;, &quot;youtube&quot;=&gt;&quot;youtube-user-name&quot;, &quot;linkedin&quot;=&gt;&quot;linkedin-user-name&quot;, &quot;photo&quot;=&gt;&quot;/assets/images/me.png&quot;}</name></author><category term="jekyll" /><category term="rlcj" /><category term="howto" /><summary type="html"><![CDATA[In order to use rlcj’s post images with overlays you’ll need to learn how to set them. You do that in post’s YAML frontmatter and I’ll show you how.]]></summary></entry><entry><title type="html">Tags in rlcj</title><link href="/posts/tags-in-rlcj" rel="alternate" type="text/html" title="Tags in rlcj" /><published>2024-11-17T13:49:00+08:00</published><updated>2024-11-17T13:49:00+08:00</updated><id>/posts/tags-in-rlcj</id><content type="html" xml:base="/posts/tags-in-rlcj"><![CDATA[<p class="lead">Tags are built using the auto-pages features of <a href="https://github.com/sverrirs/jekyll-paginate-v2/tree/master">jekyll-paginate-v2</a>. This is a plugin that automatically generates pages for each tag and extends the default Jekyll pagination with additional features such as filtering posts by tags, categories and collections.</p>
+
+<p>&lt;!–-break-–&gt;</p>
+
+<h2 id="how-to-add-a-new-tag">How to add a new tag</h2>
+
+<p>Tags are automatically indexed when you add them to a post. To add a new tag, simply add it to the <code class="language-plaintext highlighter-rouge">tags</code> field in the post’s front matter. For example, to add the tag <code class="language-plaintext highlighter-rouge">dactl</code> to a post, you would add the following to the post’s front matter:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s1">'</span><span class="s">My</span><span class="nv"> </span><span class="s">Post</span><span class="nv"> </span><span class="s">Title'</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2024-11-17 13:49:00 +0800</span>
+<span class="na">tags</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">dactl</span>
+<span class="nn">---</span></code></pre></figure>
+
+<p>That’s it! The tag <code class="language-plaintext highlighter-rouge">dactl</code> will now be indexed and will appear at the address <code class="language-plaintext highlighter-rouge">/tag/dactl</code>.</p>
+
+<h2 id="tag-pages">Tag pages</h2>
+
+<p>All tag pages use the layout <code class="language-plaintext highlighter-rouge">autopage_tags.html</code>. This layout is responsible for displaying the tag’s name, description, and a list of posts that have that tag. The layout is located in the <code class="language-plaintext highlighter-rouge">_layouts</code> directory. At this point in time, it’s basically the same as the default blog page layout.</p>]]></content><author><name>{&quot;fullname&quot;=&gt;&quot;Your Name&quot;, &quot;rss&quot;=&gt;true, &quot;mail&quot;=&gt;&quot;your@email.com&quot;, &quot;twitter&quot;=&gt;&quot;twitter-user-name&quot;, &quot;github&quot;=&gt;&quot;github-user-name&quot;, &quot;youtube&quot;=&gt;&quot;youtube-user-name&quot;, &quot;linkedin&quot;=&gt;&quot;linkedin-user-name&quot;, &quot;photo&quot;=&gt;&quot;/assets/images/me.png&quot;}</name></author><category term="rlcj" /><category term="howto" /><summary type="html"><![CDATA[Tags are built using the auto-pages features of jekyll-paginate-v2. This is a plugin that automatically generates pages for each tag and extends the default Jekyll pagination with additional features such as filtering posts by tags, categories and collections.]]></summary></entry><entry><title type="html">Post excerpts and leading paragraphs</title><link href="/posts/post-excerpts-lead-paragraphs" rel="alternate" type="text/html" title="Post excerpts and leading paragraphs" /><published>2024-11-17T13:32:00+08:00</published><updated>2024-11-17T13:32:00+08:00</updated><id>/posts/post-excerpts-lead-paragraphs</id><content type="html" xml:base="/posts/post-excerpts-lead-paragraphs"><![CDATA[<p class="lead">By default, rlcj’s blog layout displays post excerpts which are leading paragraphs as well. This requires some manual work on your part when writing a post but don’t worry - it’s really easy. Read on for more info.</p>
+
+<h2 id="post-excerpts">Post excerpts</h2>
+<p>First, let’s see how this and the above paragraph looks like in markdown:
+&lt;!–-break-–&gt;</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">By default, rlcj's blog layout displays post excerpts which are leading paragraphs as well. This requires some manual work on your part when writing a post but don't worry - it's really easy. Read on for more info.
+{: .lead}
+
+<span class="gu">## Post excerpts</span>
+First, let's see how this and the above paragraph looks like in markdown:
+<span class="nt">&lt;</span><span class="err">!–</span><span class="na">-break-</span><span class="err">–</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>As you can see above there are two things which are visible only in the post’s markdown version. You won’t see them here because they got processed by Jekyll and ‘thrown out’ while generating html version of this post.</p>
+
+<p><code class="language-plaintext highlighter-rouge">{: .lead}</code> inserted on a new line after a paragraphtells Jekyll’s markdown processor (rlcj uses <a href="https://kramdown.gettalong.org/">kramdown</a>) to add class <code class="language-plaintext highlighter-rouge">.lead</code> to the above <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> tag which results in a leading paragraph.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;!--break--&gt;</code>, inserted on a new line after <code class="language-plaintext highlighter-rouge">{: .lead}</code>, tells Jekyll that it should <a href="https://media.giphy.com/media/l46CxpYSFoFtN11ug/giphy.gif">‘break’</a> the post content at this point, so everything above it will become a post excerpt.</p>
+
+<p class="notice-alert">The order is important here - <code class="language-plaintext highlighter-rouge">&lt;!--break--&gt;</code> comes <strong>after</strong> <code class="language-plaintext highlighter-rouge">{: .lead}</code> and because of that the leading paragraph/ post excerpt has it’s font enlarged both on blog and post pages.</p>]]></content><author><name>{&quot;fullname&quot;=&gt;&quot;Your Name&quot;, &quot;rss&quot;=&gt;true, &quot;mail&quot;=&gt;&quot;your@email.com&quot;, &quot;twitter&quot;=&gt;&quot;twitter-user-name&quot;, &quot;github&quot;=&gt;&quot;github-user-name&quot;, &quot;youtube&quot;=&gt;&quot;youtube-user-name&quot;, &quot;linkedin&quot;=&gt;&quot;linkedin-user-name&quot;, &quot;photo&quot;=&gt;&quot;/assets/images/me.png&quot;}</name></author><category term="rlcj" /><category term="howto" /><summary type="html"><![CDATA[By default, rlcj’s blog layout displays post excerpts which are leading paragraphs as well. This requires some manual work on your part when writing a post but don’t worry - it’s really easy. Read on for more info.]]></summary></entry><entry><title type="html">Example content</title><link href="/posts/example-content" rel="alternate" type="text/html" title="Example content" /><published>2024-11-17T10:29:58+08:00</published><updated>2024-11-17T10:29:58+08:00</updated><id>/posts/example-content</id><content type="html" xml:base="/posts/example-content"><![CDATA[<p class="lead">Howdy! This is an example blog post that shows several types of <abbr title="HyperText Markup Language">HTML</abbr> content supported in this theme. This is a leading paragraph and should be used as a short introduction to your content.</p>
+
+<p>The content after the <code class="language-plaintext highlighter-rouge">{: .lead}</code> will not appear in the post preview on the home page or in the post list. You can exclude the <code class="language-plaintext highlighter-rouge">{: .lead}</code> tag and the preview will show as much as can fit.</p>
+
+<p>This text is in <strong>bold</strong> font by using <code class="language-plaintext highlighter-rouge">**bold**</code>. This text is in <em>italic</em> font by using <code class="language-plaintext highlighter-rouge">_italic_</code>. This text is in <del>strikethrough</del> by using <code class="language-plaintext highlighter-rouge">~~strikethrough~~</code>. This text is in <sup>superscript</sup> by using <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code>. This text is in <sub>subscript</sub> by using <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>. This text is in <mark>highlighted</mark> font by using <code class="language-plaintext highlighter-rouge">&lt;mark&gt;</code>.</p>
+
+<blockquote>
+  <p>This is a block quote. You can create a block quote by using <code class="language-plaintext highlighter-rouge">&gt;</code> at the beginning of the line.</p>
+</blockquote>
+
+<p class="notice">This is a notice block. You can create a notice block by using <code class="language-plaintext highlighter-rouge">{: .notice}</code>. There are other styles available like <code class="language-plaintext highlighter-rouge">{: .notice-alert}</code> and <code class="language-plaintext highlighter-rouge">{: .notice-success}</code>. As you can see, inline code tends to blend in with notice blocks.</p>
+
+<h2 id="inline-html-elements">Inline <abbr title="HyperText Markup Language">HTML</abbr> elements</h2>
+
+<p><abbr title="HyperText Markup Language">HTML</abbr> defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Mozilla Developer Network</a>.</p>
+
+<ul>
+  <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">**To bold text**</code>.</li>
+  <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">*To italicize text*</code>.</li>
+  <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should be defined like this <code class="language-plaintext highlighter-rouge">*[HTML]: HyperText Markup Language</code>.</li>
+  <li>Citations, like <cite>— Mark otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+  <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">~~deleted~~</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+  <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</li>
+</ul>
+
+<p>Most of these elements are styled by browsers with few modifications on our part.</p>
+
+<h2 id="heading">Heading</h2>
+
+<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+<h2 id="code">Code</h2>
+
+<p>Cum sociis natoque penatibus et magnis dis <code class="language-plaintext highlighter-rouge">code element</code> montes, nascetur ridiculus mus.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Example can be run directly in your JavaScript console</span>
+
+<span class="c1">// Create a function that takes two arguments and returns the sum of those</span>
+<span class="c1">// arguments</span>
+<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="c1">// Call the function</span>
+<span class="nf">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<span class="c1">// &gt; 8</span></code></pre></figure>
+
+<h2 id="lists">Lists</h2>
+
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+<ul>
+  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+  <li>Donec id elit non mi porta gravida at eget metus.</li>
+  <li>Nulla vitae elit libero, a pharetra augue.</li>
+</ul>
+
+<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+
+<ol>
+  <li>Vestibulum id ligula porta felis euismod semper.</li>
+  <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+  <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+</ol>
+
+<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+
+<dl>
+  <dt>HyperText Markup Language (<abbr title="HyperText Markup Language">HTML</abbr>)</dt>
+  <dd>The language used to describe and define the content of a Web page</dd>
+  <dt>Cascading Style Sheets (<abbr title="Cascading Style Sheets">CSS</abbr>)</dt>
+  <dd>Used to describe the appearance of Web content</dd>
+  <dt>JavaScript (<abbr title="JavaScript">JS</abbr>)</dt>
+  <dd>The programming language used to build advanced Web sites and applications</dd>
+</dl>
+
+<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<p class="notice-alert">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<h2 id="images">Images</h2>
+
+<p>Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.</p>
+
+<p><img src="http://placehold.it/1200x700" alt="1200x700" title="Large example image" class="oversize" />
+<img src="http://placehold.it/800x400" alt="800x400" title="Large example image" class="lead" />
+<img src="http://placehold.it/400x200" alt="400x200" title="Medium example image" />
+<img src="http://placehold.it/200x200" alt="200x200" title="Small example image" /></p>
+
+<h2 id="tables">Tables</h2>
+
+<p>Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Upvotes</th>
+      <th>Downvotes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Totals</td>
+      <td>21</td>
+      <td>23</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<h2 id="math">Math</h2>
+
+<p>Block math:</p>
+
+\[\frac{1}{1 + \frac{1}{a}}\]
+
+<p>Inline math: \(\frac{1}{1 + \frac{1}{a}}\)</p>
+
+<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+Nullam id <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<p>Photo by <a href="https://picjumbo.com/author/viktorhanacek/">Viktor Hanacek</a> from picjumbo.com</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>You can insert footnote marks using <code class="language-plaintext highlighter-rouge">[^1]</code>, <code class="language-plaintext highlighter-rouge">[^2]</code>, etc and write the footnote text at the bottom of your file like this: <code class="language-plaintext highlighter-rouge">[^1]: You can also insert footnote marks...</code> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>{&quot;fullname&quot;=&gt;&quot;Your Name&quot;, &quot;rss&quot;=&gt;true, &quot;mail&quot;=&gt;&quot;your@email.com&quot;, &quot;twitter&quot;=&gt;&quot;twitter-user-name&quot;, &quot;github&quot;=&gt;&quot;github-user-name&quot;, &quot;youtube&quot;=&gt;&quot;youtube-user-name&quot;, &quot;linkedin&quot;=&gt;&quot;linkedin-user-name&quot;, &quot;photo&quot;=&gt;&quot;/assets/images/me.png&quot;}</name></author><category term="jekyll" /><category term="rlcj" /><summary type="html"><![CDATA[Howdy! This is an example blog post that shows several types of HTML content supported in this theme.]]></summary></entry></feed>

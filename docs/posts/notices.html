@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>html{visibility: hidden;opacity:0; background-color: #1c1c1c;}</style>
+        <meta charset="utf-8">
+
+<!-- Styles -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,400italic,700,700italic">
+<style>
+    html {
+      font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+</style>
+
+
+<!-- Scripts -->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+  <div class="menu">
+    <div class="logo">
+      <a href="/">rlcj</a>
+      <span class="logo-css"></span>
+    </div>
+
+      <ul>
+          <li><a href="/about">about</a></li>
+          <li><a href="/archive">archive</a></li>
+      </ul>
+  </div>
+  <div class="social">
+    <ul>
+      
+      <li>
+          <a href="https://youtube.com/youtube-user-name" target="_blank" class="smaller">
+            <span class="line-md--youtube"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="https://linkedin.com/linkedin-user-name" target="_blank" class="smaller">
+            <span class="line-md--linkedin"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="https://twitter.com/twitter-user-name" target="_blank" class="smaller">
+            <span class="line-md--twitter-x-alt"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="https://github.com/github-user-name" target="_blank" class="smaller">
+            <span class="line-md--github-loop"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="mailto:your@email.com" target="_blank">
+            <span class="line-md--email"></span>
+          </a>
+      </li>
+      
+      
+      <li>
+          <a href="/feed.xml" target="_blank">
+              <span class="line-md--rss"></span>
+          </a>
+      </li>
+      
+    </ul>
+  </div>
+</header>
+            
+
+<article class="post">
+
+  
+  
+
+
+
+
+
+<style>
+  .notices {
+    margin-bottom: 2em;
+  }
+  .notices::before {
+    background-image: url('/uploads/2024-11-17-notices/hero.jpg');
+    background-size: cover;
+    -webkit-filter: grayscale(1) brightness(0.5) contrast(0.5);
+            filter: grayscale(1) brightness(0.5) contrast(0.5);
+
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .notices::after {
+    content:'';
+    position:absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    background-color: rgba(100,0,255,0.5);
+
+    /*mix-blend-mode: darken;
+    mix-blend-mode: color-burn;
+    mix-blend-mode: hard-light;*/
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+
+  .notices-container,
+  .notices-container::before,
+  .notices-container::after {
+    height: 25rem;
+  }
+
+  .notices-bleed-container,
+  .notices-bleed-container::before,
+  .notices-bleed-container::after {
+    height: 35rem;
+  }
+
+    @media (max-width: 48rem) {
+        .notices-container,
+        .notices-container::before,
+        .notices-container::after{
+            height: 20rem;
+            margin-bottom: 3rem;
+        }
+    }
+</style>
+  
+
+  <!-- Post title (& hero image) container -->
+  <div class="post-title-container
+  
+  notices notices-bleed-container bleed-hero-container
+    ">
+    <!--Post hero image source-->
+    
+      
+    
+    <!-- Post title -->
+    <div class="heading-container hero-heading hero-heading-post">
+      <h1>
+        
+          Notice blocks
+        
+      </h1>
+    <!-- Post meta -->
+      <div class="post-meta">
+        <span>17/11/2024</span>
+        <span>
+          
+              <a href="/tag/rlcj">#rlcj</a>
+          
+              <a href="/tag/howto">#howto</a>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+
+    <!-- Post content -->
+    <p class="lead">By default rlcj has a couple of special classes which will turn a paragraph into a notice block when added to it. Read on for information on how to use it.</p>
+
+<h2 id="how-to-create-a-notice-block">How to create a notice block</h2>
+<p>Creating notices from your paragraphs works the same way as creating <a href="LINKILYNKI">leading post paragraphs</a>.<br />
+You need to add a correct class <strong>after</strong> the paragraph:
+</p>
+
+<figure class="highlight"><pre><code class="language-markdown" data-lang="markdown">Sea otters <span class="p">[</span><span class="nv">hold each other’s paws</span><span class="p">](</span><span class="sx">https://www.youtube.com/watch?v=eTvX-CkfqRo</span><span class="p">)</span> when they sleep so they don’t drift apart.  
+That is a fact, look it up on Wikipedia if you don't believe me.
+{: .notice}</code></pre></figure>
+
+<h2 id="available-options">Available options</h2>
+<h3 id="regular-notice-block">Regular notice block</h3>
+<p><code class="language-plaintext highlighter-rouge">{: .notice}</code></p>
+
+<p class="notice">Sea otters <a href="https://www.youtube.com/watch?v=eTvX-CkfqRo">hold each other’s paws</a> when they sleep so they don’t drift apart.<br />
+That is a fact, look it up on Wikipedia if you don’t believe me.</p>
+
+<h3 id="alert-notice-block">Alert notice block</h3>
+<p><code class="language-plaintext highlighter-rouge">{: .notice-alert}</code></p>
+
+<p class="notice-alert">If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.</p>
+
+<h3 id="success-notice-block">Success notice block</h3>
+<p><code class="language-plaintext highlighter-rouge">{: .notice-success}</code></p>
+
+<p class="notice-success">If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.</p>
+
+<h2 id="multi-paragraph-notice-blocks">Multi-paragraph notice blocks</h2>
+<p>The easiest solution I found to wrapping more than paragraph into a notice is just inserting it into a markdown-enabled <code class="language-plaintext highlighter-rouge">div</code> tag, like this:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notice"</span> <span class="na">markdown=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.
+
+A number of dematerialisms concerning textual objectivism
+exist. However, if textual narrative holds, we have to choose between
+precultural theory and the conceptual paradigm of consensus.
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Which, when processed by kramdown, shows up like this:</p>
+<div class="notice">
+  <p>If one examines the capitalist paradigm of context, one is faced with a
+choice: either accept textual narrative or conclude that reality serves to
+exploit the Other.</p>
+
+  <p>A number of dematerialisms concerning textual objectivism
+exist. However, if textual narrative holds, we have to choose between
+precultural theory and the conceptual paradigm of consensus.</p>
+</div>
+
+</article>
+        </div>
+        <footer>
+  <span>this should contain a proper description
+</span>
+  <span>written by Your Name</span>
+</footer>
+        <!-- load external js scripts -->
+ 
+    </body>
+</html>
